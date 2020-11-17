@@ -3,7 +3,7 @@ A mobile application made for my Leadership School Capstone project
 
 ## Run the app
 
-To run the program for testing purposes you will need to run the following command to clone the repository
+To run the program for testing purposes you will need to run the following command in your command line to clone the repository
 
 ```bash
 git clone https://github.com/theticarcher38/LawsForPaws.git
