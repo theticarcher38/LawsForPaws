@@ -1,6 +1,12 @@
 import React from 'react';
-import { IonButtons, IonButton, IonIcon } from '@ionic/react';
-import { cogOutline } from 'ionicons/icons';
+import { 
+    IonButtons, 
+    IonButton, 
+    IonIcon 
+} from '@ionic/react';
+import { 
+    cogOutline 
+} from 'ionicons/icons';
 
 interface ContainerProps {
   name: string;

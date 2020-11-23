@@ -12,7 +12,11 @@ import {
   IonButton
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, cogOutline } from 'ionicons/icons';
+import { 
+    callOutline, 
+    informationCircleOutline, 
+    homeOutline
+} from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -50,15 +54,15 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="Home" href="/home">
-            <IonIcon icon={triangle} />
+            <IonIcon icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="About" href="/about">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={informationCircleOutline} />
             <IonLabel>About</IonLabel>
           </IonTabButton>
           <IonTabButton tab="Contact" href="/contact">
-            <IonIcon icon={square} />
+            <IonIcon icon={callOutline} />
             <IonLabel>Contact</IonLabel>
           </IonTabButton>
         </IonTabBar>
