@@ -1,8 +1,7 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonButton, IonIcon } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
-import { cogOutline } from 'ionicons/icons';
+import SettingBtn from '../components/variables/SettingBtn';
 
 const Tab3: React.FC = () => {
   return (
@@ -10,11 +9,7 @@ const Tab3: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Contact</IonTitle>
-          <IonButtons slot="end">
-              <IonButton href="./Tab4.tsx">
-                  <IonIcon slot="icon-only" icon={cogOutline}></IonIcon>
-              </IonButton>
-          </IonButtons>
+          <SettingBtn name="settings"></SettingBtn>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -23,7 +18,7 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Contact</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <ExploreContainer name="Contact Page" />
       </IonContent>
     </IonPage>
   );

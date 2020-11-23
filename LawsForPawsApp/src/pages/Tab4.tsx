@@ -1,8 +1,7 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonButtons, IonIcon } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab4.css';
-import { exit } from 'ionicons/icons';
 
 const Tab4: React.FC = () => {
   return (
@@ -10,11 +9,6 @@ const Tab4: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Settings</IonTitle> 
-          <IonButtons slot="end">
-            <IonButton>
-                <IonIcon slot="icon-only" icon={exit}></IonIcon>
-            </IonButton>
-          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -23,7 +17,7 @@ const Tab4: React.FC = () => {
             <IonTitle size="large">Settings</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 4 page" />
+        <ExploreContainer name="Settings Page" />
       </IonContent>
     </IonPage>
   );
