@@ -15,6 +15,12 @@ After that you need to have the Ionic Framework installed. Do so by running the 
 npm install -g @ionic/cli
 ```
 
+You will also need to have React.js installed
+
+```bash
+npm install react
+```
+
 Then in the ionic directory for the project which will differ from person to person but will look something like:
 
 ```bash
