@@ -1,18 +1,18 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonButtons, IonIcon } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
-import { cogOutline } from 'ionicons/icons';
+import './Tab4.css';
+import { exit } from 'ionicons/icons';
 
-const Tab1: React.FC = () => {
+const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home</IonTitle> 
+          <IonTitle>Settings</IonTitle> 
           <IonButtons slot="end">
-            <IonButton href="./Tab4.tsx">
-                <IonIcon slot="icon-only" icon={cogOutline}></IonIcon>
+            <IonButton>
+                <IonIcon slot="icon-only" icon={exit}></IonIcon>
             </IonButton>
           </IonButtons>
         </IonToolbar>
@@ -20,13 +20,13 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
+            <IonTitle size="large">Settings</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name="Tab 4 page" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Tab4;
