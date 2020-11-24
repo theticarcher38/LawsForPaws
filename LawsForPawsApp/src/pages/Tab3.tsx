@@ -16,7 +16,7 @@ const Tab3: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Contact</IonTitle>
-          <SettingBtn name="settings"></SettingBtn>
+          <SettingBtn />
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

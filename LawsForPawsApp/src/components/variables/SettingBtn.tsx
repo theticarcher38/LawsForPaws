@@ -8,11 +8,7 @@ import {
     cogOutline 
 } from 'ionicons/icons';
 
-interface ContainerProps {
-  name: string;
-}
-
-const SettingBtn: React.FC<ContainerProps> = ({ name }) => {
+const SettingBtn: React.FC = () => {
   return (
       <IonButtons slot="end">
           <IonButton href="/settings">
