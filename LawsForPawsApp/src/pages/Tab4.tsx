@@ -9,6 +9,7 @@ import {
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab4.css';
 import BackBtn from '../components/variables/BackBtn';
+import DarkModeToggle from '../components/variables/DarkModeToggle';
 
 const Tab4: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Tab4: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Settings Page" />
+        <DarkModeToggle />
       </IonContent>
     </IonPage>
   );

@@ -1,17 +1,19 @@
 import React from 'react';
 import { 
-    IonButton,
     IonButtons,
-    IonIcon
+    IonIcon,
+    IonBackButton
 } from '@ionic/react';
-import { returnUpBack } from 'ionicons/icons';
+import { 
+    returnUpBack 
+} from 'ionicons/icons';
 
 const BackBtn: React.FC = () => {
     return (
         <IonButtons slot="end">
-            <IonButton>
+            <IonBackButton defaultHref="/">
                 <IonIcon slot="icon-only" icon={returnUpBack}></IonIcon>
-            </IonButton>
+            </IonBackButton> 
         </IonButtons>
     )
 }
