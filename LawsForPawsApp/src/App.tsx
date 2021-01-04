@@ -21,6 +21,7 @@ import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
+import DogFighting from './pages/InformationPages/DogFighting';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,6 +52,7 @@ const App: React.FC = () => (
           <Route path="/contact" component={Tab3} exact={true} />
           <Route path="/settings" component={Tab4} exact={true} />
           <Route path="/information" component={Tab5} exact={true} />
+          <Route path="/DogFighting" component={DogFighting} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

@@ -6,28 +6,26 @@ import {
     IonTitle, 
     IonContent
 } from '@ionic/react'
-import SettingBtn from '../components/variables/SettingBtn'
-import InformationPage from '../components/variables/InformationPage'
+import SettingBtn from '../../components/variables/SettingBtn'
 
-const Tab5: React.FC = () => {
+const DogFighting: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Information</IonTitle>
-                    <SettingBtn/>
+                    <IonTitle>DogFighting</IonTitle>
+                    <SettingBtn />
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
                 <IonHeader collapse="condense">
                     <IonToolbar>
-                        <IonTitle size="large">Information</IonTitle>
+                        <IonTitle size="large">Dog Fighting</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <InformationPage />
             </IonContent>
         </IonPage>
     )
 }
 
-export default Tab5;
+export default DogFighting;
