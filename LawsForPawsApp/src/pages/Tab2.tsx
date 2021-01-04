@@ -5,9 +5,9 @@ import { IonContent,
     IonTitle, 
     IonToolbar 
 } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 import SettingBtn from '../components/variables/SettingBtn';
+import PageContent from '../components/PageContent';
 
 const Tab2: React.FC = () => {
   return (
@@ -24,7 +24,11 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">About</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="About Page" />
+        <PageContent
+        name="About Page"
+        subheading="Welcome to the about page"
+        content="Placeholder"
+        />
       </IonContent>
     </IonPage>
   );

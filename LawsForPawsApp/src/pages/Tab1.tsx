@@ -6,9 +6,9 @@ import {
     IonTitle, 
     IonToolbar 
 } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import SettingBtn from '../components/variables/SettingBtn';
+import PageContent from '../components/PageContent';
 
 const Tab1: React.FC = () => {
   return (
@@ -25,7 +25,14 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Homepage" />
+        <PageContent
+        name="Home Page"
+        subheading="Welcome to the Laws for Paws app"
+        content="This application is designed to inform
+        the masses on animal abuse. This is in a effort
+        to educate people on what is and what isn't animal
+        abuse and what to do if you witness animal abuse."
+        />
       </IonContent>
     </IonPage>
   );
