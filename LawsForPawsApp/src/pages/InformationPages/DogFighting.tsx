@@ -7,7 +7,7 @@ import {
     IonContent
 } from '@ionic/react'
 import SettingBtn from '../../components/variables/SettingBtn'
-import PageContent from '../../components/PageContent'
+import InformationPageContent from '../../components/InformationPageContent'
 
 const DogFighting: React.FC = () => {
     return (
@@ -24,11 +24,15 @@ const DogFighting: React.FC = () => {
                         <IonTitle size="large">Dog Fighting</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <PageContent
+
+                <InformationPageContent
                 name="Dog Fighting"
-                subheading="Information about Dog Fighting"
-                content="Place holder"
-                 />
+                subheading="Information about dog fighting"
+                content="placeholder"
+                tip1="If you witness a dog fight in progress you should call 911 immediately"
+                tip2="If you suspect that there is dog fighting going on then you should 
+                call the HSUS tipline: 1-877-TIP-HSUS"
+                />
             </IonContent>
         </IonPage>
     )
