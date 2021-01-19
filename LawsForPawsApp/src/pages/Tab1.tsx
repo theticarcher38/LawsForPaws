@@ -8,7 +8,7 @@ import {
 } from '@ionic/react';
 import './Tab1.css';
 import SettingBtn from '../components/variables/SettingBtn';
-import PageContent from '../components/PageContent';
+import PageContent from '../components/PageContent/RegularPageContent/PageContent';
 
 const Tab1: React.FC = () => {
   return (
