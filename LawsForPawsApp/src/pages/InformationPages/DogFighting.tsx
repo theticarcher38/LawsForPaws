@@ -26,8 +26,11 @@ const DogFighting: React.FC = () => {
                 </IonHeader>
                 <PageContent
                 name="Dog Fighting"
-                subheading="Placeholder"
+                subheading="Information about dog fighting"
                 content="Placeholder"
+                tip1="If you witness a dog fight in progress you should call 911 immediately"
+                tip2="If you suspect that there is dog fighting going on then you should
+                call the HSUS tipline: 1-877-TIP-HSUS"
                 />
             </IonContent>
         </IonPage>
