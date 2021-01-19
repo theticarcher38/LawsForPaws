@@ -7,7 +7,7 @@ import {
     IonToolbar
 } from '@ionic/react'
 import SettingBtn from '../../components/variables/SettingBtn'
-import PageContent from '../../components/PageContent'
+import InformationPageContent from '../../components/PageContent/InformationPageContent/InformationPageContent'
 
 const CockFighting: React.FC = () => {
     return (
@@ -23,10 +23,13 @@ const CockFighting: React.FC = () => {
                             <IonTitle>Cock Fighting</IonTitle>
                         </IonToolbar>
                     </IonHeader>
-                    <PageContent
+
+                    <InformationPageContent
                     name="Cock Fighting"
                     subheading="Information about cock fights"
-                    content="placeholder" 
+                    content="placeholder"
+                    tip1=""
+                    tip2=""
                     />
                 </IonContent>
             </IonHeader>

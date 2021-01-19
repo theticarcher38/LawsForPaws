@@ -9,7 +9,7 @@ import {
 import './Tab4.css';
 import BackBtn from '../components/variables/BackBtn';
 import DarkModeToggle from '../components/variables/DarkModeToggle';
-import PageContent from '../components/PageContent';
+import PageContent from '../components/PageContent/RegularPageContent/PageContent';
 
 const Tab4: React.FC = () => {
   return (
