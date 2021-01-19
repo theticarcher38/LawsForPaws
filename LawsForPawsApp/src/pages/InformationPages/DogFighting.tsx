@@ -1,13 +1,13 @@
 import React from 'react'
 import { 
-    IonPage, 
-    IonHeader, 
-    IonToolbar, 
-    IonTitle, 
-    IonContent
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonTitle,
+    IonToolbar
 } from '@ionic/react'
 import SettingBtn from '../../components/variables/SettingBtn'
-import InformationPageContent from '../../components/InformationPageContent'
+import PageContent from '../../components/PageContent'
 
 const DogFighting: React.FC = () => {
     return (
@@ -24,18 +24,17 @@ const DogFighting: React.FC = () => {
                         <IonTitle size="large">Dog Fighting</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-
-                <InformationPageContent
+                <PageContent
                 name="Dog Fighting"
                 subheading="Information about dog fighting"
-                content="placeholder"
+                content="Placeholder"
                 tip1="If you witness a dog fight in progress you should call 911 immediately"
-                tip2="If you suspect that there is dog fighting going on then you should 
+                tip2="If you suspect that there is dog fighting going on then you should
                 call the HSUS tipline: 1-877-TIP-HSUS"
                 />
             </IonContent>
         </IonPage>
-    )
-}
+    );
+};
 
 export default DogFighting;
