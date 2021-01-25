@@ -4,7 +4,6 @@ import {
     IonItem 
 } from '@ionic/react';
 import './InformationPage.css';
-
 const InformationPage: React.FC = () => {
     return ( 
         <IonList> 

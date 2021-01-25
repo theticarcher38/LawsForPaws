@@ -10,7 +10,14 @@ interface ContainerProps {
     aboutMe?: string;
 }
 
-const AboutPageContent: React.FC<ContainerProps> = ({ name, subheading, content, aboutHeading, aboutContent, aboutMe }) => {
+const AboutPageContent: React.FC<ContainerProps> = ({ 
+    name, 
+    subheading, 
+    content, 
+    aboutHeading, 
+    aboutContent, 
+    aboutMe 
+}) => {
     return(
         <div className="container">
             <strong>{name}</strong>

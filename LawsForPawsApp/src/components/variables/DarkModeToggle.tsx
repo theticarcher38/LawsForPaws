@@ -1,6 +1,14 @@
 import React from 'react';
-import { IonList, IonItem, IonIcon, IonLabel, IonToggle } from '@ionic/react';
-import { moon } from 'ionicons/icons';
+import { 
+    IonList, 
+    IonItem, 
+    IonIcon, 
+    IonLabel, 
+    IonToggle 
+} from '@ionic/react';
+import { 
+    moon 
+} from 'ionicons/icons';
 
 const toggleDarkModeHandler = () => {
     document.body.classList.toggle("dark");
