@@ -26,3 +26,11 @@
         text-align: justify;
         margin: 40px;
 }
+
+.tip {
+    font-size: 16px;
+    line-height: 18px;
+    color: #890acb;
+    text-align: justify;
+    margin: 40px;
+}

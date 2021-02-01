@@ -12,16 +12,24 @@ interface ContainerProps {
     tip4?: string;
 }
 
-const InformationPageContent: React.FC<ContainerProps> = ({ name, subheading, content, tip1, tip2, tip3, tip4}) => {
+const InformationPageContent: React.FC<ContainerProps> = ({ 
+    name, 
+    subheading, 
+    content, 
+    tip1, 
+    tip2, 
+    tip3, 
+    tip4
+}) => {
     return (
         <div className="container">
             <strong>{name}</strong>
             <p className="subheading">{subheading}</p>
             <p className="content">{content}</p>
-            <p className="content">{tip1}</p>
-            <p className="content">{tip2}</p>
-            <p className="content">{tip3}</p>
-            <p className="content">{tip4}</p>
+            <p className="tip">{tip1}</p>
+            <p className="tip">{tip2}</p>
+            <p className="tip">{tip3}</p>
+            <p className="tip">{tip4}</p>
         </div>
     )
 }
