@@ -1,39 +1,51 @@
 import React from 'react';
 import axios from 'axios';
-import { error } from 'console';
 
-interface ContainerProps {
-    id: number;
-    title: string;
-    content: string;
+// For testing purposes
+// const API_KEY = 'f21b679d38e741059d7f80dde84fc864';
+// const URL = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`;
+
+// Local Machine URL
+ const API_URL = 'http://127.0.0.1:8000/pages/api/updatePosts/updatePosts.json';
+
+// Network URL
+// const API_URL = 'http://192.168.1.193/pages/api/updatePosts/updatePosts.json';
+
+const SendGetRequest = async () => {
+
+    const response = await axios({
+        url: API_URL,
+        method: 'get'
+    });
+    console.log(response);
+    return response.data;
 }
 
-const defaultProps:ContainerProps[] = [];
 
-const UpdatePageContent: React.FC<ContainerProps> = ({id, title, content}) => {
+const UpdatePageContent: React.FC = () => {
 
-    const [posts, setPosts]: [ContainerProps[], (posts: ContainerProps[]) => void] = React.useState(defaultProps);
-
-    const [loading, setLoading]: [boolean, (loading: boolean) => void] = React.useState<boolean>(true);
-
-    const [error, setError]: [string, (error: string) => void] = React.useState("");
+    const [posts, setPosts] = React.useState([]);
 
     React.useEffect(() => {
-        axios.get<ContainerProps[]>("http://192.168.1.193:8000/pages/api/updatePosts/updatePosts.json");
-        .then(response => {
-            setPosts(response.json());
-            setLoading(false);
-    }, []);
-
+        SendGetRequest().then(data => setPosts(data.posts));
+    }, []); 
 
     return (
-        <div>
-            {posts.map((post) => {
-                return (
-                    <h1>{post.title}</h1>
-                )
-            })}
-        </div>
+        <>
+          {
+            posts.map(post => {
+
+              return (
+                <div key={post['id']}>
+                   <strong> {post['title']}</strong>
+                    <br/><br/>
+                    {post['post_content']}
+                    <hr/>
+                </div>
+              );
+            })
+          }
+    </>
     )
 
 }
