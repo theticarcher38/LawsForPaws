@@ -22,6 +22,12 @@ Then in the ionic directory for the project which will differ from person to per
 ../../LawsForPaws/LawsForPawsApp
 ```
 
+You will need to install axios
+
+```bash
+npm install axios
+```
+
 Once you are in the ionic project directory run:
 
 ```bash
