@@ -14,7 +14,8 @@ import {
     callOutline, 
     informationCircleOutline, 
     homeOutline,
-    helpCircleOutline
+    helpCircleOutline,
+    mailOutline,
 } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
@@ -43,6 +44,16 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+toggleDarkTheme(prefersDark.matches);
+
+prefersDark.addListener((mediaQuery) => toggleDarkTheme(mediaQuery.matches));
+
+function toggleDarkTheme(shouldAdd: any) {
+  document.body.classList.toggle('dark', shouldAdd);
+}
 
 const App: React.FC = () => (
   <IonApp>
@@ -75,6 +86,10 @@ const App: React.FC = () => (
           <IonTabButton tab="Information" href="/information">
             <IonIcon icon={helpCircleOutline} />
             <IonLabel>Information</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="Posts" href="/updates">
+            <IonIcon icon={mailOutline} />
+            <IonLabel>Posts</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

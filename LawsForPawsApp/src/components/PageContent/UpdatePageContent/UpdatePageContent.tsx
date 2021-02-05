@@ -1,5 +1,16 @@
 import React from 'react';
 import axios from 'axios';
+import { 
+  IonCard, 
+  IonCardContent, 
+  IonCardHeader, 
+  IonCardSubtitle, 
+  IonCardTitle,
+  IonImg,
+  IonThumbnail
+ } from '@ionic/react';
+
+ import './UpdatePageContent.css';
 
 // For testing purposes
 // const API_KEY = 'f21b679d38e741059d7f80dde84fc864';
@@ -24,28 +35,45 @@ const SendGetRequest = async () => {
 
 const UpdatePageContent: React.FC = () => {
 
-    const [posts, setPosts] = React.useState([]);
+    const [posts, setPosts,] = React.useState([]);
+    const [comments, setComments] = React.useState([]);
 
     React.useEffect(() => {
         SendGetRequest().then(data => setPosts(data.posts));
+        SendGetRequest().then(data => setComments(data.posts.comments));
     }, []); 
 
     return (
-        <>
+      <div>
           {
             posts.map(post => {
 
               return (
-                <div key={post['id']}>
-                   <strong> {post['title']}</strong>
-                    <br/><br/>
-                    {post['post_content']}
-                    <hr/>
-                </div>
-              );
+                <IonCard key={post['id']}>
+
+                  <IonThumbnail slot="start">
+                    <IonImg src={post['post_photo']}/>
+                  </IonThumbnail>
+
+                  <IonCardHeader>
+                    <IonCardSubtitle>{post['post_organization']}</IonCardSubtitle>
+                    <IonCardTitle><strong> {post['title']}</strong></IonCardTitle>
+                  </IonCardHeader>
+                  <IonCardContent><p>{post['post_content']}</p></IonCardContent>
+                  <>
+                    {
+                      comments.map(comment => {
+                        return (
+                          <IonCardContent key={comment['id']}>{comment['content']}</IonCardContent>
+                        )
+                      })
+                    }
+                  </>
+                </IonCard>
+              )
             })
           }
-    </>
+      </div>
     )
 
 }
