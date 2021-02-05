@@ -42,4 +42,6 @@ ___
 
 ## License
 
-[Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0/ "Apache 2.0")
+[Apache 2.0 License][1]
+
+[1]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
