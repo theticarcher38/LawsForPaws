@@ -2,6 +2,8 @@
 
 A mobile application made for my Leadership School Capstone project
 
+___
+
 ## Run the app
 
 To run the program for testing purposes you will need to run the following command in your command line to clone the repository
@@ -35,3 +37,9 @@ ionic serve
 ```
 
 When prompted to install react-scripts by Ionic select yes
+
+___
+
+## License
+
+[Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0/)
