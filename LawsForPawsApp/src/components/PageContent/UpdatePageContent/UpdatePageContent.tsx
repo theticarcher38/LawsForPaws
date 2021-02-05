@@ -40,7 +40,7 @@ const UpdatePageContent: React.FC = () => {
 
     React.useEffect(() => {
         SendGetRequest().then(data => setPosts(data.posts));
-        SendGetRequest().then(data => setComments(data.comments));
+        SendGetRequest().then(data => setComments(data.posts.comments));
     }, []); 
 
     return (
