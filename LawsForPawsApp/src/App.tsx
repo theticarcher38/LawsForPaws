@@ -23,6 +23,8 @@ import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
 import Tab6 from './pages/Tab6';
+import Tab7 from './pages/Tab7';
+import Tab8 from './pages/Tab8';
 import DogFighting from './pages/InformationPages/DogFighting';
 import CockFighting from './pages/InformationPages/CockFighting';
 
@@ -66,6 +68,8 @@ const App: React.FC = () => (
           <Route path="/settings" component={Tab4} exact={true} />
           <Route path="/information" component={Tab5} exact={true} />
           <Route path="/updates" component={Tab6} exact={true} />
+          <Route path="/petitions" component={Tab7} exact={true} />
+          <Route path="/adoptions" component={Tab8} exact={true} />
           <Route path="/DogFighting" component={DogFighting} exact={true} />
           <Route path="/CockFighting" component={CockFighting} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
