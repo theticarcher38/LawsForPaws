@@ -58,6 +58,7 @@ const UpdatePageContent: React.FC = () => {
                     <IonCardTitle><strong> {post['title']}</strong></IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent><p>{post['post_content']}</p></IonCardContent>
+                  <IonCardContent><p className="date-published">{post['date_published']}</p></IonCardContent>
                 </IonCard>
               )
             })
