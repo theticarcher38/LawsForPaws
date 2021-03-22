@@ -9,6 +9,7 @@ import {
 import './Tab1.css';
 import SettingBtn from '../components/variables/SettingBtn';
 import PageContent from '../components/PageContent/RegularPageContent/PageContent';
+import { Menu } from '../components/variables/Menu';
 
 const Tab1: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
+            <Menu />
             <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
