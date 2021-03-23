@@ -11,6 +11,6 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Any issues or vunerabilities please report here: "issues"[1]
+Any issues or vunerabilities please report here: [Issues][1]
 
 [1]: <https://github.com/theticarcher38/LawsForPaws/issues> "Issues"
