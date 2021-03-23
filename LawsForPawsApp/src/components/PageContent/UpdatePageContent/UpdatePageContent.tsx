@@ -35,12 +35,10 @@ const SendGetRequest = async () => {
 
 const UpdatePageContent: React.FC = () => {
 
-    const [posts, setPosts,] = React.useState([]);
-    const [comments, setComments] = React.useState([]);
+    const [posts, setPosts] = React.useState([]);
 
     React.useEffect(() => {
         SendGetRequest().then(data => setPosts(data.posts));
-        SendGetRequest().then(data => setComments(data.posts.comments));
     }, []); 
 
     return (
@@ -60,15 +58,7 @@ const UpdatePageContent: React.FC = () => {
                     <IonCardTitle><strong> {post['title']}</strong></IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent><p>{post['post_content']}</p></IonCardContent>
-                  <>
-                    {
-                      comments.map(comment => {
-                        return (
-                          <IonCardContent key={comment['id']}>{comment['content']}</IonCardContent>
-                        )
-                      })
-                    }
-                  </>
+                  <IonCardContent><p className="date-published">{post['date_published']}</p></IonCardContent>
                 </IonCard>
               )
             })
