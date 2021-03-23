@@ -42,11 +42,19 @@ ___
 
 **Assets**:
 
-* [Personal Web Server](https://github.com/theticarcher38/Web_Server)
+* [Personal Web Server][1]
+___
+
+## Security
+
+* [Security Document][2]
 ___
 
 ## License
 
-[Apache 2.0 License][1]
+[Apache 2.0 License][3]
 
-[1]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
+[1]: <https://github.com/theticarcher38/Web_Server/> "Personal Web Server"
+[2]: <https://github.com/theticarcher38/LawsForPaws/SECURITY.md> "Security Document"
+[3]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
+
