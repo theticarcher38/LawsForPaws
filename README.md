@@ -57,4 +57,3 @@ ___
 [1]: <https://github.com/theticarcher38/Web_Server/> "Personal Web Server"
 [2]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
 [3]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
-
