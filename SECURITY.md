@@ -11,8 +11,6 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please report any issues or vunerabilities here: [Issues][1]
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+[1]: <https://github.com/theticarcher38/LawsForPaws/issues> "Issues"
