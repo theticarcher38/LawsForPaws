@@ -41,15 +41,19 @@ When prompted to install react-scripts by Ionic select yes
 **Assets**:
 
 * [Laws For Paws Web Server][1]
+* [Ionic Framework][2]
+* [Axios][3]
 
 ## Security
 
-* [Security Document][2]
+* [Security Document][3]
 
 ## License
 
-[Apache 2.0 License][3]
+[Apache 2.0 License][4]
 
 [1]: <https://github.com/theticarcher38/Web_Server/> "Personal Web Server"
-[2]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
-[3]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
+[2]: <https://www.axios.com/> "Axios"
+[3]: <https://ionicframework.com/> "Ionic Framework"
+[4]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
+[5]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
