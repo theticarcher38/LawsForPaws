@@ -42,7 +42,7 @@ ___
 
 **Assets**:
 
-* [LFP Web Server][1]
+* [Laws For Paws Web Server][1]
 ___
 
 ## Security
