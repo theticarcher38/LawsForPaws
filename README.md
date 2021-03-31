@@ -38,17 +38,13 @@ ionic serve
 
 When prompted to install react-scripts by Ionic select yes
 
-___
-
 **Assets**:
 
 * [Laws For Paws Web Server][1]
-___
 
 ## Security
 
 * [Security Document][2]
-___
 
 ## License
 
