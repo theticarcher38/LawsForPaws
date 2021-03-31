@@ -59,6 +59,8 @@ When prompted to install react-scripts by Ionic select yes
 
 [Apache 2.0 License][9]
 
+[Back to the Top][10]
+
 [1]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#run-the-app> "Run The App"
 [2]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#assets> "Assets"
 [3]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#security> "Security"
@@ -68,3 +70,4 @@ When prompted to install react-scripts by Ionic select yes
 [7]: <https://ionicframework.com/> "Ionic Framework"
 [8]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
 [9]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
+[10]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#table-of-contents> "Table of Contents"
