@@ -7,7 +7,7 @@ ___
 ## Table of Contents
 
 1. [Run the App][1]
-2. [Assets][2]
+2. [Dependencies][2]
 3. [Security][3]
 4. [License][4]
 
@@ -45,32 +45,34 @@ ionic serve
 
 When prompted to install react-scripts by Ionic select yes
 
-## Assets:
+## Dependencies:
 
 * [Laws For Paws Web Server][5]
 * [Ionic Framework][6]
 * [Axios][7]
+* [React-Scripts][8]
 
 ## Security
 
-* [Security Document][8]
+* [Security Document][9]
 
 ## License
 
-[Apache 2.0 License][9]
+[Apache 2.0 License][10]
 
 
 
 
-[Back to the Top][10]
+[Back to the Top][11]
 
 [1]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#run-the-app> "Run The App"
-[2]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#assets> "Assets"
+[2]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#dependencies> "Assets"
 [3]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#security> "Security"
 [4]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#license> "License"
 [5]: <https://github.com/theticarcher38/Web_Server/> "Personal Web Server"
 [6]: <https://www.axios.com/> "Axios"
 [7]: <https://ionicframework.com/> "Ionic Framework"
-[8]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
-[9]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
-[10]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#lawsforpaws> "Top"
+[8]: <https://www.npmjs.com/package/react-scripts> "React-Scripts"
+[9]: <https://github.com/theticarcher38/LawsForPaws/blob/master/SECURITY.md> "Security Document"
+[10]: <https://choosealicense.com/licenses/apache-2.0/> "Apache 2.0"
+[11]: <https://github.com/theticarcher38/LawsForPaws/blob/master/README.md#lawsforpaws> "Top"
